@@ -11,6 +11,10 @@ numberBtns.forEach((num) => {
   num.addEventListener('click', () => populateNumbers(num));
 });
 
+operatorBtns.forEach((operator) => {
+  operator.addEventListener('click', () => addOperator(operator));
+});
+
 function add(a, b) {
   return a + b;
 }
@@ -52,4 +56,8 @@ function operate(firstOperand, operator, nextOperand) {
 
 function populateNumbers(num) {
   displayScreen.textContent += num.textContent;
+}
+
+function addOperator(operator) {
+  displayScreen.textContent += operator.textContent;
 }
