@@ -3,8 +3,8 @@ let operator = '';
 let nextOperand = '';
 let result = '';
 
-const displayScreen = document.querySelector('display');
-const numberBtns = document.querySelectorAll('number-btn');
+const displayScreen = document.querySelector('.display');
+const numberBtns = document.querySelectorAll('.number-btn');
 
 function add(a, b) {
   return a + b;
