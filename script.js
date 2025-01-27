@@ -7,12 +7,12 @@ const displayScreen = document.querySelector('.display');
 const numberBtns = document.querySelectorAll('.number-btn');
 const operatorBtns = document.querySelectorAll('.operator-btn');
 
-numberBtns.forEach((num) => {
-  num.addEventListener('click', () => populateNumbers(num));
+numberBtns.forEach((numBtn) => {
+  numBtn.addEventListener('click', () => updateDisplayWithNumber(numBtn));
 });
 
-operatorBtns.forEach((operator) => {
-  operator.addEventListener('click', () => addOperator(operator));
+operatorBtns.forEach((operatorBtn) => {
+  operatorBtn.addEventListener('click', () => updateDisplayWithOperator(operatorBtn));
 });
 
 function add(a, b) {
@@ -54,10 +54,10 @@ function operate(firstOperand, operator, nextOperand) {
   }
 }
 
-function populateNumbers(num) {
-  displayScreen.textContent += num.textContent;
+function updateDisplayWithNumber(numBtn) {
+  displayScreen.textContent += numBtn.textContent;
 }
 
-function addOperator(operator) {
-  displayScreen.textContent += operator.textContent;
+function updateDisplayWithOperator(operatorBtn) {
+  displayScreen.textContent += operatorBtn.textContent;
 }
