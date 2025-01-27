@@ -55,9 +55,18 @@ function operate(firstOperand, operator, nextOperand) {
 }
 
 function updateDisplayWithNumber(numBtn) {
-  displayScreen.textContent += numBtn.textContent;
+  if(!operator){
+    firstOperand += numBtn.textContent;
+    displayScreen.textContent = firstOperand;
+  } else {
+    nextOperand += numBtn.textContent;
+    displayScreen.textContent = firstOperand + operator + nextOperand;
+  }
 }
 
 function updateDisplayWithOperator(operatorBtn) {
-  displayScreen.textContent += operatorBtn.textContent;
+  if(firstOperand && !nextOperand) {
+    operator += operatorBtn.textContent;
+    displayScreen.textContent = firstOperand + operator;
+  }
 }
