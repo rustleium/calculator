@@ -6,6 +6,10 @@ let result = '';
 const displayScreen = document.querySelector('.display');
 const numberBtns = document.querySelectorAll('.number-btn');
 
+numberBtns.forEach((num) => {
+  num.addEventListener('click', () => populateNumbers(num));
+});
+
 function add(a, b) {
   return a + b;
 }
@@ -43,4 +47,8 @@ function operate(firstOperand, operator, nextOperand) {
       return 'Error: Invalid Operator';
       break;
   }
+}
+
+function populateNumbers(num) {
+  displayScreen.textContent += num.textContent;
 }
