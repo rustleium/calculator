@@ -1,0 +1,48 @@
+.container {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.display {
+  height: 150px;
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 32px;
+  text-align: right;
+}
+
+.clear-delete {
+  display: flex;
+  gap: 6px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.clear-btn, 
+.delete-btn {
+  height: 72px;
+  width: 172px;
+  font-size: 18px;
+}
+
+.number-container {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  row-gap: 5px;
+
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0px 3px;
+}
+
+.number-container .row button {
+  height: 76px;
+  width: 83px;
+  font-size: 24px;
+}
