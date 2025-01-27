@@ -23,3 +23,21 @@ function divide(a, b) {
     return a / b;
   }
 }
+
+function operate(firstOperand, operator, nextOperand) {
+  const a = parseInt(firstOperand);
+  const b = parseInt(nextOperand);
+  switch (operator) {
+    case 'add':
+      return add(a, b);
+    case 'subtract':
+      return subtract(a, b);
+    case 'multiply':
+      return multiply(a, b);
+    case 'divide':
+      return divide(a, b);
+    default:
+      return 'Error: Invalid Operator';
+      break;
+  }
+}
