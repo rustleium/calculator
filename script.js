@@ -5,6 +5,7 @@ let result = '';
 
 const displayScreen = document.querySelector('.display');
 const numberBtns = document.querySelectorAll('.number-btn');
+const operatorBtns = document.querySelectorAll('.operator-btn');
 
 numberBtns.forEach((num) => {
   num.addEventListener('click', () => populateNumbers(num));
