@@ -44,15 +44,15 @@ function operate(firstOperand, operator, nextOperand) {
   const b = parseInt(nextOperand);
   switch (operator) {
     case '+':
-      return add(a, b);
+      return result =  add(a, b);
     case '-':
-      return subtract(a, b);
+      return result =  subtract(a, b);
     case '×':
-      return multiply(a, b);
+      return result =  multiply(a, b);
     case '÷':
-      return divide(a, b);
+      return result =  divide(a, b);
     default:
-      return 'Error: Invalid Operator';
+      return result =  'Error: Invalid Operator';
       break;
   }
 }
