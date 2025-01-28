@@ -6,6 +6,7 @@ let result = '';
 const displayScreen = document.querySelector('.display');
 const numberBtns = document.querySelectorAll('.number-btn');
 const operatorBtns = document.querySelectorAll('.operator-btn');
+const equateBtn = document.querySelector('.equal-btn');
 
 numberBtns.forEach((numBtn) => {
   numBtn.addEventListener('click', () => updateDisplayWithNumber(numBtn));
