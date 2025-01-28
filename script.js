@@ -81,7 +81,5 @@ function updateDisplayWithResult() {
     firstOperand = result.toString();
     nextOperand = '';
     operator = '';
-  } else {
-    displayScreen.textContent = "Error: Incomplete Operation";
-  }
+  } 
 }
