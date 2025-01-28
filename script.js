@@ -54,7 +54,6 @@ function operate(firstOperand, operator, nextOperand) {
       return result =  divide(a, b);
     default:
       return result =  'Error: Invalid Operator';
-      break;
   }
 }
 
