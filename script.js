@@ -17,6 +17,7 @@ operatorBtns.forEach((operatorBtn) => {
 });
 
 equateBtn.addEventListener('click', () => operate(firstOperand, operator, nextOperand));
+equateBtn.addEventListener('click', () => updateDisplayWithResult());
 
 function add(a, b) {
   return a + b;
@@ -71,5 +72,16 @@ function updateDisplayWithOperator(operatorBtn) {
   if(firstOperand && !nextOperand) {
     operator += operatorBtn.textContent;
     displayScreen.textContent = firstOperand + operator;
+  }
+}
+
+function updateDisplayWithResult() {
+  if(firstOperand, operator, nextOperand) {
+    displayScreen.textContent = result;
+    firstOperand = result.toString();
+    nextOperand = '';
+    operator = '';
+  } else {
+    displayScreen.textContent = "Error: Incomplete Operation";
   }
 }
