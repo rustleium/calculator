@@ -40,13 +40,13 @@ function operate(firstOperand, operator, nextOperand) {
   const a = parseInt(firstOperand);
   const b = parseInt(nextOperand);
   switch (operator) {
-    case 'add':
+    case '+':
       return add(a, b);
-    case 'subtract':
+    case '-':
       return subtract(a, b);
-    case 'multiply':
+    case '×':
       return multiply(a, b);
-    case 'divide':
+    case '÷':
       return divide(a, b);
     default:
       return 'Error: Invalid Operator';
