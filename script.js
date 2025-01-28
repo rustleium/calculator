@@ -16,6 +16,8 @@ operatorBtns.forEach((operatorBtn) => {
   operatorBtn.addEventListener('click', () => updateDisplayWithOperator(operatorBtn));
 });
 
+equateBtn.addEventListener('click', () => operate(firstOperand, operator, nextOperand));
+
 function add(a, b) {
   return a + b;
 }
